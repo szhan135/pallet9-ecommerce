@@ -1,0 +1,58 @@
+@import '../../css/variables';
+.AddProduct {
+  min-width: 320px;
+  max-width: 500px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 40px 0 40px 0;
+  margin-top: 40px;
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
+  @include flex-display(column, center, normal);
+  .header {
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    margin: 0 0 15px;
+  }
+  .addProductButton {
+    border-radius: 24px;
+    background-color: #fff;
+    border: 2px solid black;
+    width: 160px;
+    padding: 2px;
+    cursor: pointer;
+    outline: none;
+    margin: 20px auto 0;
+    @include flex-display(row, space-between, center);
+    &:hover {
+      background-color: #f7f7f7;
+    }
+    &:active {
+      box-shadow: 0 7px 5px -5px rgba(0, 0, 0, 0.2),
+      0 12px 10px 2px rgba(0, 0, 0, 0.14),
+      0 5px 10px 4px rgba(0, 0, 0, 0.12)
+    }
+    &:disabled {
+      pointer-events: none;
+      border: 2px solid #c3c3c3;
+      color: #c3c3c3;
+      .addProductIcon {
+        background-color: #c3c3c3;
+      }
+    }
+  }
+  .addProductIcon {
+    color: white;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    background-color: black;
+  }
+  .addProductText {
+    margin: auto;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+  }
+}

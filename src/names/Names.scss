@@ -1,0 +1,6 @@
+@import "../css/variables";
+
+.Names {
+  width: 100%;
+  @include flex-display(column, flex-start, center);
+}

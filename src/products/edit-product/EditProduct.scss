@@ -1,0 +1,25 @@
+@import '../../css/variables';
+.EditProduct {
+  border-top: 5px solid #5e97ff;
+  padding: 25px;
+  margin-top: 25px;
+  min-width: 320px;
+  max-width: 400px;
+  width: 100%;
+  &.invalid {
+    border-top-color: #ff2e09;
+  }
+  &.submitted {
+    border-top-color: #01a811;
+  }
+  .form-group {
+    @include flex-display(column, center, normal);
+  }
+  .form-control {
+    margin-bottom: 20px;
+  }
+  .error {
+    margin: -15px 0 15px;
+    color: #ff2e09;
+  }
+}
